@@ -1,0 +1,304 @@
+// *   a:rabic Language ar ar_rules
+// *   This file writen by Taha Zerrouki 2012
+//*********
+// *   This program is free software; you can redistribute it and/or modify  *
+// *   it under the terms of the GNU General Public License as published by  *
+// *   the Free Software Foundation; either version 3 of the License, or     *
+// *   (at your option) any later version.                                   *
+// *                                                                         *
+// *   This program is distributed in the hope that it will be useful,       *
+// *   but WITHOUT a:NY Wa:RRa:NTY; without even the implied warranty of        *
+// *   MERCHa:NTa:BILITY or FITNESS FOR a: Pa:RTICULa:R PURPOSE.  See the         *
+// *   GNU General Public License for more details.                          *
+// *                                                                         *
+// *   You should have received a copy of the GNU General Public License     *
+// *   along with this program; if not, see:                                 *
+// *               <http://www.gnu.org/licenses/>.                           *
+// ***************************************************************************/
+
+// This file is UTF-8 encoded
+// all words must be LOWER Ca:SE  (although the initial letter will be automatically
+//    converted if it's a 7bit ascii character)
+// Text to phoneme rules for a:rabic
+
+// replace a:rabic  eastern  character numbers with a:rabic western character numbers
+.replace
+		٠	0
+		۰	0
+		۱	1
+		١	1
+		٢	2
+		۲	2
+		٣	3
+		۳	3
+		٤	4
+		۴	4
+		٥	5
+		۵	5
+		٦	6
+		۶	6
+		٧	7
+		۷	7
+		٨	8
+		۸	8
+		٩	9
+		۹	9
+
+		
+
+//all vowels
+.A  آ ا ي و ؤ َ ُ ِ ً ٌ ٍ ّ
+
+//list of consonants
+.C  ب پ ت ة ث ج ح خ د ذ ر ز  س ش ص ض ط  ظ ع غ ف ق ک گ ل م ن ئ ه
+
+//all vowels
+.L01  آ ا ي و ؤ َ ُ ِ ً ٌ ٍ ّ 
+
+//short vowels (commonly unwritten )
+.L02  َ ُ ِ  ً ٌ ٍ
+
+//list of consonants
+.L03  ب پ ت ة ث ج ح خ د ذ ر ز  س ش ص ض ط  ظ ع غ ف ق ک گ ل م ن ئ ه
+
+// all Arabic characters without ا آ
+.L04  ض ص ث ق ف غ ع ه خ ح ج چ ً ٌ ٍ ، ؛ ش س ي ب ل ت ن م ک گ َ ُ ِ ّ ۀ ـ « » ظ ط ز ر ذ د ئ و ة ي ژ ؤ إ أ ء ؟ پ 
+
+//list of consonants without خ
+.L05  ب پ ت ث ج چ ح د ذ ر ز ژ س ش ص ض ط  ظ ع غ ف ق ک گ ل م ن ئ ه
+
+//list of consonants without د ر ي ش ا آ
+.L06  ب پ ت ث ج چ ح خ ذ ز ژ س ص ض ط  ظ ع غ ف ق ک گ ل م ن ئ
+
+// all Arabic characters without ي ي
+.L07  ض ص ث ق ف غ ع ه خ ح ج چ ً ٌ ٍ ، ؛ ش س ب ل ا ت ن م ک گ َ ُ ِ ّ ۀ آ ـ « » ظ ط ز ر ذ د ئ و ة ژ ؤ إ أ ء ؟ پ 
+
+// all Arabic characters
+.L09  ض ص ث ق ف غ ع ه خ ح ج چ ً ٌ ٍ ، ؛ ش س ي ب ل ا ت ن م ک گ َ ُ ِ ّ ۀ آ ـ « » ظ ط ز ر ذ د ئ و ة ي ژ ؤ إ أ ء ؟ پ 
+
+
+// Arabic Sun characters
+.L10  ض ص ث ش س ل ت ن ظ ط ز ر ذ د  
+
+// Arabic Moon characters
+.L11  ق ف غ ع ه خ ح ج ي ب م ك  و  إ أ ء  
+
+
+//.group
+	
+	
+ 
+.group آ
+	آ	?a:
+.group ا
+	_) ا	a
+	َ)ا	:  // make the previous fatha long
+//	ا (_	a:
+	ا (ُ	?
+	ا (ِ	?
+	ا (َ	?	
+	اً	an
+	ً) ا    '
+	L03) ا	a:
+
+		
+.group ب
+	ب 	b
+
+
+.group پ
+	پ 	p
+
+.group ت
+	ت 	t
+
+.group ث
+	ث 	T
+
+.group ج
+	ج 	dZ
+
+.group ح	
+	ح 	H
+
+
+.group خ
+	خ 	X
+
+
+.group د
+	د 	d
+
+.group ذ
+	ذ 	D
+
+
+.group ر
+	ر 	r
+
+.group ز
+	ز 	z
+
+
+.group س
+	س 	s
+
+.group ش
+	ش 	S
+
+
+
+.group ص
+	ص 	s[
+
+
+.group ض
+	ض 	dH
+
+.group ط
+	ط 	t[
+
+
+.group ظ
+	ظ 	Z
+
+
+
+.group ع
+	 ع 	A
+
+
+
+.group غ
+	غ 	gH
+
+
+
+.group ف
+	ف 	f
+
+.group ق
+	ق 	q
+
+
+
+.group ك
+	ك 	k
+
+
+
+.group گ
+	گ	g
+
+
+.group ل
+	_ا) ل (L10 ' // Sun letters
+	ل 	l
+
+
+.group م
+	م 	m
+
+
+
+.group ن
+	ن 	n
+
+
+.group ه
+	ه 	h
+
+
+	
+.group و
+	_) و	w
+	ا) و	w	
+	ْ) و	w	
+	َ) و	w	
+	ِ) و	w		
+	 و (L01	w	 
+	ُ)و	:  // make the prevuous damma long
+	L03) و	u:
+
+
+
+
+	
+.group ي
+	_) ي	j
+	ا) ي	j	
+	ْ) ي	j	
+	َ) ي	j	
+	ُ) ي	j		
+	ي (L01	j	 
+	ِ)ي	%:  // make the previous kasra long
+	L03) ي	%i:
+
+
+.group ء
+	ء	?
+
+.group ّ
+	ّ	':
+
+.group ئ
+	ئ	?
+
+
+.group ؤ
+	ؤ	?
+
+.group ة
+	//ة (L01	h
+	ة	t
+
+//vowels that are not usually written:
+
+.group  ْ
+	َْ	'
+
+.group َ
+	َ	%a
+
+.group ِ
+	ِ	%i
+	
+
+.group ُ
+	ُ	%u
+
+.group ٌ // dammatan
+	ٌ	%on
+
+.group    ً  // fatahatan
+	ً	%an
+
+.group ٍ  // kasratan
+	ٍ	%in
+
+.group أ
+	أ	?
+
+.group إ
+	إ	?i
+
+.group ـ
+	ـ	
+
+.group ،
+	،	
+	
+.group ؛
+	؛	
+
+//characters and numbers and words with English alphabet is translated by English phonemes
+
+
+// default group for "non of the above"
+
+.group
+
+// non-ascii characters with specified pronunciations
+// List the accented characters in en_list with the $accent attribute
+        à          a
+

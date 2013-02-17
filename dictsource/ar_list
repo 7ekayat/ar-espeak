@@ -1,0 +1,187 @@
+// *   arabic Language ar ar_list
+// *   This file writen by Shadyar Khodayari 2012
+//*********
+// *   This program is free software; you can redistribute it and/or modify  *
+// *   it under the terms of the GNU General Public License as published by  *
+// *   the Free Software Foundation; either version 3 of the License, or     *
+// *   (at your option) any later version.                                   *
+// *                                                                         *
+// *   This program is distributed in the hope that it will be useful,       *
+// *   but WITHOUT aaNY WaaRRaaNTY; without even the implied warranty of        *
+// *   MERCHaaNTaaBILITY or FITNESS FOR aa PaaRTICULaaR PURPOSE.  See the         *
+// *   GNU General Public License for more details.                          *
+// *                                                                         *
+// *   You should have received a copy of the GNU General Public License     *
+// *   along with this program; if not, see:                                 *
+// *               <http://www.gnu.org/licenses/>.                           *
+// ***************************************************************************/
+//*********
+// You can use the en_extra file, rather than this one
+// to add your own pronunciation definitions.
+// ***************************************************************************/
+
+// This file is UTF-8 encoded
+// all words must be LOWER CaaSE  (although the initial letter will be automatically
+//    converted if it's a 7bit ascii character)
+
+//stress symbols  ' primary  , secondary  % unstressed
+
+// letter names, as they are spoken as a single character in text
+// precede by _  to distinguish from pronunciation as a language word
+
+//aarabic aalphabet
+//آ	'aa
+//ا	'alef
+//ب	'be:
+//پ	'pe:
+//ت	'te:
+//ث	'se:
+//ج	'dZim
+//چ	'tSe:
+//ح	'heje,dZimi
+//خ	'xe:
+//د	'daal
+//ذ	'zaal
+//ر	R1%re:
+//ز	'ze:
+//ژ	'Ze:
+//س	'sin
+//ش	'Sin
+//ص	'saad
+//ض	'zaad
+//ط	'taa
+//ظ	'zaa
+//ع	'ejn
+//غ	'qejn
+//ف	'fe:
+//ق	'q:aaf
+//ک	kaaf
+//گ	'g:aaf
+//ل	'laam
+//م	'mim
+//ن	'nun
+//_و	'vaav
+//ه	'he:
+//ي	'je:
+//َ	a
+//ُ	o
+//ِ	e:
+//ّ	taSdid
+//ً	'an
+//ٌ	'on
+//ٍ	'en
+//،	viRgul
+//؛	noqteviRgul
+//ـ	keSi'dane,hoRuf
+//ئ	'je,hamze:
+//ؤ	'vaav,hamze:
+//?	'hehamze:
+//إ	'alefe,hamzeziR
+//أ	'alefe,hamzeRu
+//ء	'hamze:
+//ة	'he,donoqte:
+//ي	'jeaRabi
+
+
+
+// numeric
+//_0    zero $text  // TEST
+_0	s[ifr
+_1	wa:Hid
+_2	?iTna:n
+_3	TalaTah
+_4	?arbaAah
+_5	Xamsah
+_6	sittah
+_7	sabAah
+_8	Tamanijah
+_9	tisAah
+_10	AaSarah
+_11	?aHada||AaSarah
+_12	?iTna||AaSarah
+_13	TalaTata||AaSarah
+_14	?arbaAata||AaSarah
+_15	Xamsata||AaSarah
+_16	sittata||AaSarah
+_17	sabAata||AaSarah
+_18	Tamanijata||AaSarah
+_19	tisAata||AaSarah
+_2X	AiSro:n
+_3X	TalaTo:n
+_4X	?arbaAo:n
+_5X	Xamso:n
+_6X	sitto:n
+_7X	sabA:n
+_8X	Tamano:n
+_9X	tisAo:n
+
+_0C	mi?ah
+_1C	mi?ah
+_2C	mi?ata:n
+_3C	TalaTumi?ah
+_4C	?arbaAumi?ah
+_5C	Xamsumi?ah
+_6C	sittumi?ah
+_7C	sabAumi?ah
+_8C	Tmanumi?ah
+_9C	tisAumi?ah
+
+_0M1	alf
+_0M2	milju:n
+_0M3	milja:r
+_0and	o
+_dpt	noqte:
+_roman	roUm@n_
+
+_#st	om
+_#nd	va
+_#rd	om
+_#th	om
+
+
+// character names
+÷	taqsim
+×	dHarb
+؟	:alaamatesoaal
+!	:alaamate'ta?j:ob
+$	dola:r
+%	bi'al'mi?ah
+[	AaridHah mafto:Hah
+]	AaridHah magHlaqah
+(	qaws magHlaq
+)	qaws magHlaq
+*	nedZma
+-	naqis
+.	noqt[ah
+:	noqt[ata:n
+<	as[gHar||min
+=	tusa:wi
+>	akbar||min
+{	Ha'dHi'nah mafto:Hah
+}	Ha'dHi'nah magHlaqah
+#8204	'nimfaasele:
+
+
+//characters and numbers and words with English alphabet is translated by English phonemes
+		//th	_^_en
+
+
+
+
+
+
+// MaaIN WORD DICTIONaaRY
+//*********************
+
+// exceptional words with flags
+ای	i	$only
+
+// exceptional words,  (out of rules)
+تیمور	tejmuur
+محسن	mohsen
+اضطراب	ezteRaab
+قرآن	q:or?aan
+انجیل	endZil
+محظور	mahzu*:
+
+
