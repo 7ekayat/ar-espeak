@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>منطيق by arabic-tools</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body dir="rtl">
+    <div class="wrapper">
+      <header>
+        <h1 id="title">منطيق</h1>
+        <div>
+        <img src="images/logo.png" />
+        </div>
+        <p>دعم العربية في برنامج توليد الكلام espeak</p>
+
+        <p class="view"><a href="https://github.com/arabic-tools/ar-espeak">راجع المشروع على GitHub<small>arabic-tools/ar-espeak</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/arabic-tools/ar-espeak/zipball/master">تحميل بصيغة <strong>ملف ZIP</strong></a></li>
+          <li><a href="https://github.com/arabic-tools/ar-espeak/tarball/master">تحميل بصيغة <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/arabic-tools/ar-espeak">إلقاء نظرة على <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>مشروع المِنْطيق</h3>
+
+<p>مشروع “المِنْطِيق“  Mintiq : Arabic eSpeak يهدف إلى إعداد الملفات الضرورية لعمل آلة النطق مفتوحة المصدر إسبيك، وجعلها تنطق بالعربية.
+وقد أطلقنا الإصدار التجريبي الأول من المشروع، المتوفر للتحميل ، ويأتي هذا المشروع ليسد ثغرة كبيرة في هذا المجال، ويفتح آفاقا جديدة لتوليد الكلام من النص العربي.</p>
+<h3>تحميل المشروع عبر Git</h3>
+<pre dir = "ltr"><code>$ git clone https://github.com/arabic-tools/ar-espeak.git
+$ cd ar-espeak
+</code></pre>
+<h3>تسمية المشروع: ‫</h3>
+ورد في <a href="http://www.baheth.info/all.jsp?term=%D9%85%D9%86%D8%B7%D9%8A%D9%82">لسان العرب </a> :
+<blockquote>
+مادة نطق: المِنْطِيق البليغ؛ أَنشد ثعلب: والنَّوْمُ ينتزِعُ العَصا من ربِّها، ويَلوكُ، ثِنْيَ لسانه، المِنْطِيق وقد أَنْطَقَه الله واسْتَنْطقه أَي كلَّمه وناطَقَه.
+
+مادة كلم: ورجل تِكْلامٌ وتِكْلامة وتِكِلاَّمةٌ وكِلِّمانيٌّ: جَيِّدُ الكلام فَصِيح حَسن الكلامِ مِنْطِيقٌٌ
+</blockquote>
+<h3>التطبيقات المحتملة للمشروع</h3>
+<p>برامج لقراءة الشاشة للمكفوفين مثل:</p>
+<ul>
+<li>برنامج أوركا&nbsp; <a href="http://projects.gnome.org/orca/" target="_blank">http://projects.gnome.org/orca/</a></li>
+<li>&nbsp;NVDA <a href="http://arabic-nvda.org/" target="_blank">http://arabic-nvda.org</a></li>
+</ul>
+<p>برنامج قراءة النصوص والتعبيرات المتكررة: KMouth</p>
+<ul>
+<li><a href="http://www.kde.org/applications/utilities/kmouth/" target="_blank">Kmouth</a></li>
+</ul>
+<p>
+وسنعمل على ربط المشروع ببرنامج التشكيل مشكال، لأجل قراءة أفضل للنص العربي.
+وتضم الحزمة العربية ثلاث ملفات للكلام، أولها مصمم خصيصا لآلة النطق إسبيك، أما الملفان الباقيان، فهما من مشروع Mbrola.
+</p>
+<h3>طريقة التنصيب والاستعمال</h3>
+كيف تضيف ملفات العربية إلى espeak إسبيك (الدليل العربي)<br>
+<b>نظام وندوز</b><br>
+1- نزّل برنامج إسبيك من <a href="http://espeak.sf.net" target="_blank">http://espeak.sf.net</a><br>
+2- عند تثبيت البرنامج، يرجى إدخال قائمة أسماء اللغات التلقائية الآتية:<br>
+“ar”و “mb-ar1″ و “mb-ar2″<br>
+3- فك ضغط ملف ar-espeak<br>
+4- بعد انتهاء التثبيت، انسخ ما في مجلد “espeak-data” إلى<br>
+“C:\Program Files\eSpeak\espeak-data\”</p>
+<p><b>لينكس</b><br>
+1- تحقق أن إسبيك مثبت، يمكن تحميله من<br>
+<a href="http://espeak.sf.net" target="_blank">http://espeak.sf.net</a><br>
+2- تحقق من مسار مجلد espeak-data<br>
+على نظام فيدورا، يوجد في المسار /usr/share/espeak-data<br>
+3- فك ضغط ملف ar-speak<br>
+4- نسخ ما في مجلد “espeak-data” إلى<br>
+/usr/share/espeak-data<br>
+5- تحقق أنّ إسبيك تعرف إلى ملفات العربية بالأمر<br>
+<!-- HTML generated using hilite.me --></p>
+<div dir="ltr" style="background:white;overflow:auto;width:auto;color:black;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin:0;line-height:125%;">espeak --voices<span style="color:#303030;">=</span>ar</pre>
+</div>
+<p>فيعطيك نتيجة مثل:<br>
+<!-- HTML generated using hilite.me --></p>
+<div dir="ltr" style="background:white;overflow:auto;width:auto;color:black;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin:0;line-height:125%;">espeak --voices<span style="color:#303030;">=</span>ar
+Pty Language Age/Gender VoiceName File Other Langs
+1 ar M arabic-mbrola-1 mb/mb-ar1
+2 ar M arabic-mbrola-2 mb/mb-ar2
+5 ar M arabic ar</pre>
+</div>
+<p>6- جرّب النطق بالأمر:<br>
+<!-- HTML generated using hilite.me --></p>
+<div dir="ltr" style="background:white;overflow:auto;width:auto;color:black;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin:0;line-height:125%;">espeak <span style="background-color:#fff0f0;">'السلام عليكم'</span> -v ar</pre>
+</div>
+<p><b> الاستعمال</b><br>
+البرنامج فيه ثلاث ملفات نطق عربية هي ar, mb-ar1, mb-ar2<br>
+يمكن استعمالها أحدها على منوال:</p>
+<p><!-- HTML generated using hilite.me --></p>
+<div dir="ltr" style="background:white;overflow:auto;width:auto;color:black;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin:0;line-height:125%;">espeak <span style="background-color:#fff0f0;">'السلام عليكم'</span> -v ar
+espeak <span style="background-color:#fff0f0;">'السلام عليكم'</span> -v mb-ar1
+espeak <span style="background-color:#fff0f0;">'السلام عليكم'</span> -v mb-ar2</pre>
+</div>
+<p>يمكن توليد الكلام من ملف مثل<br>
+<!-- HTML generated using hilite.me --></p>
+<div dir="ltr" style="background:white;overflow:auto;width:auto;color:black;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin:0;line-height:125%;">espeak -f sample.txt -v ar</pre>
+</div>
+<p><b>ملاحظة</b><br>
+للحصول على نتائج أفضل، يرجى استعمال نصوص مشكولة.<br>
+يمكن تشكيل النصوص ببرنامج مشكال لتشكيل النصوص الذي يمكن تحميله من<br>
+<a href="http://mishkal.sourceforge.net" target="_blank">http://mishkal.sourceforge.net</a><br>
+واستعماله على الوب من<a href="http://http://tahadz.com/mishkal" target="_blank"></a></p><a href="http://http://tahadz.com/mishkal" target="_blank">
+</a><p><a href="http://http://tahadz.com/mishkal" target="_blank">http://tahadz.com/mishkal</a>
+
+      </section>
+      <footer>
+        <p>هذا المشروع من تطوير <a href="http://twitter.com/linuxscout">طه زروقي</a></p>
+        <p><small>مستضاف على صفحات GitHub &mdash; تصميم: <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
