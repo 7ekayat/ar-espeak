@@ -156,11 +156,6 @@ phoneme @-   //  very short schwa
   FMT(vowel/@-)
 endphoneme
 
-phoneme A
-  vowel starttype #i endtype #i
-  length 200
-  FMT(vowel/0_3)
-endphoneme
 
 phoneme a
   vowel starttype #a endtype #a
@@ -254,9 +249,6 @@ endphoneme
 //*******************************************************************
 
 phoneme #@  virtual
-endphoneme
-
-phoneme #A  virtual
 endphoneme
 
 phoneme #a  virtual
@@ -584,6 +576,29 @@ phoneme l.
 endphoneme
 
 
+phoneme L/
+  import_phoneme base/l/2
+endphoneme
+
+phoneme L   // velar L
+  liquid
+  lengthmod 7
+
+  IF nextPh(isNotVowel) THEN
+    ChangePhoneme(L/)     // use 'dark' [l] after a vowel
+  ENDIF
+
+  VowelEnding(ll/xll, -40)
+
+  IF prevPh(isPause) THEN
+     FMT(ll/_ll)
+  ENDIF
+
+  FMT(ll/ll)
+endphoneme
+
+
+
 
 phoneme w
   liquid
@@ -756,12 +771,12 @@ phoneme n.
   ENDIF
 
   NextVowelStarts
-    VowelStart(n/n@)
-    VowelStart(n/na)
-    VowelStart(n/ne)
-    VowelStart(n/ni)
-    VowelStart(n/no)
-    VowelStart(n/nu)
+    VowelStart(n/nr@)
+    VowelStart(n/nra)
+    VowelStart(n/nre)
+    VowelStart(n/nri)
+    VowelStart(n/nro)
+    VowelStart(n/nru)
   EndSwitch
 
   IF prevPh(isNotVowel) AND nextPhW(isLiquid) THEN
@@ -1650,8 +1665,6 @@ include ph_base2
 phonemetable en base
 include ph_english
 
-
-
 phonemetable en-n en
 include ph_english_n
 
@@ -1705,6 +1718,15 @@ include ph_french_ca
 phonemetable hi base
 include ph_hindi
 
+phonemetable bn hi
+include ph_bengali
+
+phonemetable ne hi
+include ph_nepali
+
+phonemetable ur hi
+include ph_urdu
+
 phonemetable ta hi
 include ph_tamil
 
@@ -1717,6 +1739,10 @@ include ph_malayalam
 
 phonemetable hu base
 include ph_hungarian
+
+phonemetable lt base
+include ph_lithuanian
+
 
 phonemetable lv base
 include ph_latvian
@@ -1764,6 +1790,9 @@ include ph_spanish_la
 phonemetable ca es
 include ph_catalan
 
+phonemetable an es
+include ph_aragon
+
 phonemetable pt base2
 include ph_pt_brazil
 
@@ -1789,7 +1818,10 @@ phonemetable is base
 include ph_icelandic
 
 phonemetable vi base
-include ph_vi
+include ph_vietnam
+
+phonemetable vi-hue vi
+include ph_vietnam_hue
 
 phonemetable zhy base
 include ph_zh_yue
@@ -1830,12 +1862,6 @@ include ph_georgian
 
 phonemetable rw base2
 include ph_kinyarwanda
-
-//phonemetable bn hi
-//include ph_bengali
-
-phonemetable ne hi
-include ph_nepali
 
 //phonemetable mr hi
 //include ph_marathi
@@ -1901,5 +1927,15 @@ include ph_kazakh
 phonemetable fa base
 include ph_farsi
 
-phonemetable ar base
-include ph_arabic
+phonemetable ga base
+include ph_irish
+
+phonemetable tt base
+include ph_tatar
+
+phonemetable ko base
+include ph_korean
+
+phonemetable kl base
+include ph_greenlandic
+
