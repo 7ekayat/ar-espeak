@@ -1,4 +1,4 @@
-// *   arabic Language ar ar_list
+// *   arabic Language ar ar_list
 // *   This file writen by Shadyar Khodayari 2012
 //*********
 // *   This program is free software; you can redistribute it and/or modify  *
@@ -29,58 +29,56 @@
 // letter names, as they are spoken as a single character in text
 // precede by _  to distinguish from pronunciation as a language word
 
-//aarabic aalphabet
-//آ	'aa
-//ا	'alef
-//ب	'be:
-//پ	'pe:
-//ت	'te:
-//ث	'se:
-//ج	'dZim
-//چ	'tSe:
-//ح	'heje,dZimi
-//خ	'xe:
-//د	'daal
-//ذ	'zaal
-//ر	R1%re:
-//ز	'ze:
-//ژ	'Ze:
-//س	'sin
-//ش	'Sin
-//ص	'saad
-//ض	'zaad
-//ط	'taa
-//ظ	'zaa
-//ع	'ejn
-//غ	'qejn
-//ف	'fe:
-//ق	'q:aaf
-//ک	kaaf
-//گ	'g:aaf
-//ل	'laam
-//م	'mim
-//ن	'nun
-//_و	'vaav
-//ه	'he:
-//ي	'je:
-//َ	a
-//ُ	o
-//ِ	e:
-//ّ	taSdid
-//ً	'an
-//ٌ	'on
-//ٍ	'en
-//،	viRgul
-//؛	noqteviRgul
-//ـ	keSi'dane,hoRuf
-//ئ	'je,hamze:
-//ؤ	'vaav,hamze:
-//?	'hehamze:
-//إ	'alefe,hamzeziR
-//أ	'alefe,hamzeRu
-//ء	'hamze:
-//ة	'he,donoqte:
-//ي	'jeaRabi
+//arabic alphabet
+_آ	alif mamdu:dah
+_ا	alif
+ب	ba:?
+پ	pi
+ت	ta:?
+ث	Ta:?
+ج	dZim
+ح	Ha:?
+خ	Xa:?
+د	da:l
+ذ	Da:l
+ر	ra:?
+ز	za:j
+س	si:n
+ش	Si:n
+ص	s[a:d
+ض	dHa:d
+ط	t[a:?
+ظ	Za:?
+ع	Aajn
+غ	gHajn
+ف	fa:?
+ق	qa:f
+ك	ka:f
+گ	ga:f
+ل	la:m
+م	mi:m
+ن	nu:n
+و	wa:w
+ه	ha:?
+ي	ja:?
+َ	fatHah
+ُ	dhammah
+ِ	kasrah
+ّ	Saddah
+ْ	suku:n
+ً	fatHata:n
+ٌ	dhammata:n
+ٍ	kasrata:n
+،	fa:s[ilah
+؛	nuqt[atah||fa:s[lah
+ـ	tat[wi:l
+ئ	hamzah||Ala||?alja:?
+ؤ	hamzah||Ala||?alwa:?
+إ	hamzah||taHta||?alwa:?
+أ	?alif
+ء	hamzah
+ة	ta:?||marbu:t[ah
+ى	?alif||maqs[u:rah
 
 
 
@@ -89,7 +87,7 @@
 _0	s[ifr
 _1	wa:Hid
 _2	?iTna:n
-_3	TalaTah
+_3	Tala:Tah
 _4	?arbaAah
 _5	Xamsah
 _6	sittah
@@ -98,40 +96,76 @@ _8	Tamanijah
 _9	tisAah
 _10	AaSarah
 _11	?aHada||AaSarah
-_12	?iTna||AaSarah
-_13	TalaTata||AaSarah
+_12	?iTna:||AaSarah
+_13	Tala:Tata||AaSarah
 _14	?arbaAata||AaSarah
 _15	Xamsata||AaSarah
 _16	sittata||AaSarah
 _17	sabAata||AaSarah
-_18	Tamanijata||AaSarah
+_18	Tama:nijata||AaSarah
 _19	tisAata||AaSarah
-_2X	AiSro:n
-_3X	TalaTo:n
-_4X	?arbaAo:n
-_5X	Xamso:n
-_6X	sitto:n
+_2X	AiSru:n
+_3X	TalaTu:n
+_4X	?arbaAu:n
+_5X	Xamsu:n
+_6X	sittu:n
 _7X	sabA:n
-_8X	Tamano:n
-_9X	tisAo:n
+_8X	Tama:nu:n
+_9X	tisAu:n
 
 _0C	mi?ah
 _1C	mi?ah
 _2C	mi?ata:n
-_3C	TalaTumi?ah
+_3C	Tala:Tumi?ah
 _4C	?arbaAumi?ah
 _5C	Xamsumi?ah
 _6C	sittumi?ah
 _7C	sabAumi?ah
-_8C	Tmanumi?ah
+_8C	Tama:numi?ah
 _9C	tisAumi?ah
 
-_0M1	alf
-_0M2	milju:n
+_0M1	?alf
+_1M1	?alf
+_2M1	?alfa:n
+_3M1	Tala:Tat||?a:la:f
+_4M1	?arbaAat||?a:la:f
+_5M1	Xamsat||?a:la:f
+_6M1	sittat||?a:la:f
+_7M1	sabAat||?a:la:f
+_8M1	Tama:nijat||?a:la:f
+_9M1	tisAat||?a:la:f
+_10M1	AaSarat||?a:la:f
+
+
+
+_0M2	m%ilj%u:n
+_1M2	m%ilju:n
+_2M2	milju:na:n
+_3M2	Tala:Tat||mala:ji:n
+_4M2	?arbaAat||mala:ji:n
+_5M2	Xamsat||mala:ji:n
+_6M2	sittat||mala:ji:n
+_7M2	sabAat||mala:ji:n
+_8M2	Tama:nijat||mala:ji:n
+_9M2	tisAat||mala:ji:n
+_10M2	AaSarat||mala:ji:n
+
 _0M3	milja:r
-_0and	o
-_dpt	noqte:
-_roman	roUm@n_
+_1M3	milja:r
+_2M3	milja:ra:n
+_3M3	Tala:Tat||milja:ra:t
+_4M3	?arbaAat||milja:ra:t
+_5M3	Xamsat||milja:ra:t
+_6M3	sittat||milja:ra:t
+_7M3	sabAat||milja:ra:t
+_8M3	Tama:nijat||milja:ra:t
+_9M3	tisAat||milja:ra:t
+_10M3	AaSarat||milja:ra:t
+
+
+_0and	wa
+_dpt	fa:s[il
+_roman	ruma:ni:
 
 _#st	om
 _#nd	va
@@ -140,26 +174,26 @@ _#th	om
 
 
 // character names
-÷	taqsim
-×	dHarb
-؟	:alaamatesoaal
-!	:alaamate'ta?j:ob
-$	dola:r
-%	bi'al'mi?ah
-[	AaridHah mafto:Hah
-]	AaridHah magHlaqah
-(	qaws magHlaq
-)	qaws magHlaq
-*	nedZma
--	naqis
-.	noqt[ah
-:	noqt[ata:n
-<	as[gHar||min
-=	tusa:wi
->	akbar||min
-{	Ha'dHi'nah mafto:Hah
-}	Ha'dHi'nah magHlaqah
-#8204	'nimfaasele:
+÷	taqsi:m
+×	fi:
+؟	Aala:amat||?istifha:m
+!	Aala:amat||taAadZdZub
+$	du:la:r
+%	bilmi?ah
+[	Aa:ridHah||maftu:Hah
+]	Aa:ridHah||mugHlaqah
+(	qaws||maftu:H
+)	qaws||mugHlaq
+*	nedZmah
+-	na:qis[
+/.	nuqt[ah
+/:	nuqt[ata:n
+<	?as[gHar||min
+=	tusa:wi:
+>	?akbar||min
+{	Ha:dHinah||maftu:Hah
+}	Ha:dHinah||mugHlaqah
+
 
 
 //characters and numbers and words with English alphabet is translated by English phonemes
@@ -177,11 +211,49 @@ $	dola:r
 ای	i	$only
 
 // exceptional words,  (out of rules)
-تیمور	tejmuur
-محسن	mohsen
-اضطراب	ezteRaab
-قرآن	q:or?aan
-انجیل	endZil
-محظور	mahzu*:
+// propoer nouns
+طه	t[a:ha:
+عمرو	Aamr
+//abbriviation
+د	?ad'duktu:r	$hasdot
+أنا	?nba?ana:	$hasdot
+اه	?intaha:	$hasdot
+ثنا	Had'daTana:	$hasdot
+الخ	?ila||?a:_Xirih	$hasdot
+إلخ	?ila||?a:Xirih	$hasdot
+رحه	raHimahullah	$hasdot
+رضه	radHijallahu||Anhu	$hasdot
 
+//الألف اللينة
+إله	?ila:h
+أولئك	?ula:?ika
+أولو	?ulu:
+أولي	?uli:
+داود	da:wu:d
+ذلك	Da:lika
+التي	?allati:
+الذي	?allaDi:
+الذين	?allaDi:na
+اللذين	?allaDajn
+اللذان	?allaDa:ni
+صلعم	s[alla:|?allahu|Alajhi||wa||sallam
+الرحمن	?arraHma:n
+لكن	la:kin
+الله	?alla:h
+اللهم	?allahumma
+هؤلاء	ha:?ula:?i
+هذا	ha:Da:
+هذان	ha:Da:ni
+هذه	ha:Dihi
+//الوحدات
+كغ	kilu:||gHra:m
+// مركب الاسم
+ابن	?ibn
+بن	ban
+
+//foreign language
+إنجليزية		?ingli:zijah // probelm
+جوجل		gu:gal
+غوغل		gu:gal
+(بسم الله)	bismilla:h
 
