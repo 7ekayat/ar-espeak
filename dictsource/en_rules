@@ -387,6 +387,7 @@
         _r) adio (@P5    r,eIdI%oU
          r) adi (oL10+   eIdI
          b) ad (os_      eId
+        _s) ado (ma      ,eIdoU
             ad (iA       eId
          s) ad (is       eId
        _tr) ad (it       a#d
@@ -1275,7 +1276,7 @@
          _) be (gg       bE
          _) belarus      bEl@r'u:s
          _) be (lC       bE
-         _) be (lli      bI2
+         _) be (llig     bI2
          _) be (sC       bI2
          _) be (stia     bE
          _) be (tB       bE
@@ -2681,7 +2682,7 @@
             for (see     f%O@
             for (ward    f'o@  // straightforward
             ft (en       f
-         &) ful (_S3     f@L
+         &) ful (_S3i     f@L
          &) fully (_S5   f@li
          &) fulness (_S7   f@Ln@s
 
@@ -2768,6 +2769,7 @@
             h (_
         _B) h
          @) hammed       h'amId
+         d) h (am_
          A) han (_       han          // places
          e) han (_       h@n
             ha  (st      heI
@@ -2920,6 +2922,7 @@
         nt) il (_        @L
         @v) il (_        @L
          @) ila (_       'Il@
+?3       &) ile (_$w_alt2  @L
         _C) i (lage      aI
         _d) i (lat       %aI
          l) il (ah_      aIl
@@ -3380,6 +3383,7 @@
          &) ion (_       =i@n
 ?8       &) ion (_       =IVn
         ll) ion          i@n
+        ll) ion (_       =i@n
          n) ion          =i@n
          v) io (l        aI@
             ione (_      'aI@ni
@@ -3570,7 +3574,6 @@
         _l) iv (eB       aIv
         XC) iv (el       Iv
         _g) iv (e        Iv
-        _l) iv (e        Iv
          l) iv (er       Iv
          r) iv (er       Iv
         dr) iv (er       aIv
@@ -3678,8 +3681,8 @@
             legged       lEgId
 //        Ab) le           @L
          C) le (ton_     @L
-        Ab) ler (_       l@
-        Ab) le (C_       l@
+        Ab) ler (_       l3
+        Ab) le (B_       l@
         Ab) led (_       @Ld
          &) lem (ent     @Lm
         &p) lem (ent     lIm
@@ -3751,8 +3754,7 @@
          _) metall (ic   m@tal
             metabo       m@t'ab0
          _) meta (llu    m%Eta
-         _) mobile       moUbaIl
-            mobile       m@bi:l
+         &) mobile       m@bi:l
             mono (ga     m@n'0
             mo (noto     m@
          _) mono         m0noU
@@ -4400,6 +4402,7 @@
             os (al_      'oUz
         _l) os (e        u:z
             ose (_       oUz
+         c) ose (_       oUs
       purp) ose          @s
         _r) os (e#       oUz
          c) os (ec       oUs

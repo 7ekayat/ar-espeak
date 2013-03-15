@@ -113,6 +113,13 @@ U+bf9	ru:ba:j
 ½	araI
 ¾	mukka:l
 
+// alphabet names
+_ar	arVbU
+_cyr	sirillik
+_he	;ebire:jVm
+_zh	tS'i:nV
+
+
 // abbreviations
 ரூ	ru:ba:j  $dot $only
 (பி . ஏ)	bije: $dot
