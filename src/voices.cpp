@@ -395,10 +395,10 @@ void VoiceReset(int tone_only)
 // Set voice to the default values
 
 	int  pk;
-//	static unsigned char default_heights[N_PEAKS] = {140,128,120,110,90,90,128,128,128};  // changed for v.1.47
-//	static unsigned char default_widths[N_PEAKS] = {128,128,128,160,171,171,128,128,128};
-	static unsigned char default_heights[N_PEAKS] = {128,128,120,120,110,110,128,128,128};  // previous version
+	static unsigned char default_heights[N_PEAKS] = {130,128,120,116,100,100,128,128,128};  // changed for v.1.47
 	static unsigned char default_widths[N_PEAKS] = {140,128,128,160,171,171,128,128,128};
+//	static unsigned char default_heights[N_PEAKS] = {128,128,120,120,110,110,128,128,128};  // previous version
+//	static unsigned char default_widths[N_PEAKS] = {128,128,128,160,171,171,128,128,128};
 
 	static int breath_widths[N_PEAKS] = {0,200,200,400,400,400,600,600,600};
 
@@ -419,7 +419,7 @@ void VoiceReset(int tone_only)
 	voice->n_harmonic_peaks = 5;
 	voice->peak_shape = 0;
 	voice->voicing = 64;
-	voice->consonant_amp = 85;  // change to 85 for v.1.47 was 100
+	voice->consonant_amp = 90;  // change to 85 for v.1.47 was 100
 	voice->consonant_ampv = 100;
 	voice->samplerate = samplerate_native;
 	memset(voice->klattv,0,sizeof(voice->klattv));
@@ -447,7 +447,6 @@ void VoiceReset(int tone_only)
 		// adjust formant smoothing depending on sample rate
 		formant_rate[pk] = (formant_rate_22050[pk] * 22050)/samplerate;
 	}
-	voice->height[2] = 240;  // reduce F2 slightly
 
 	// This table provides the opportunity for tone control.
 	// Adjustment of harmonic amplitudes, steps of 8Hz
@@ -586,7 +585,7 @@ voice_t *LoadVoice(const char *vname, int control)
 	static const char *voices_asia =
 		"fa fa-pin hi hy hy-west id ka kn ku ml ne pa ta tr vi vi-hue zh zh-yue ";
 	static const char *voices_europe =
-		"bg bs ca cs cy da el es et fi fr-be hr hu is it lt lv mk nl no pl pt-pt ro ru sk sq sr sv ";
+		"an bg bs ca cs cy da el es et fi fr-be hr hu is it lt lv mk nl no pl pt-pt ro ru sk sq sr sv ";
 
 
 	strncpy0(voicename, vname, sizeof(voicename));

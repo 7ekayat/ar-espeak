@@ -369,7 +369,7 @@ sua	$u+	$nounf
 ?2	nossas	$u+ $nounf	n'Os&s
 dele	dely	$u1+
 dela	$u+
-deles	$u+
+deles	delys	$u1+
 delas	$u+
 nele	nely	$u1+
 
@@ -654,7 +654,7 @@ apego		$alt2 $noun
 apelo		$alt  $verb
 aposto		$alt  $verb
 aperto		$alt2 $noun
-apoio		$alt  $verb
+apoio		$alt2 $noun
 aprovo		$alt
 arredores	$alt
 arremesso	$alt2 $noun
@@ -662,6 +662,7 @@ arroz		$alt2
 assembleia	$alt
 ateia		$alt
 aterro		$alt2 $noun
+aterros		$alt2
 atmosfera	$alt
 atrozes		$alt
 autora		$alt2
@@ -730,12 +731,15 @@ colore		$alt
 começo		$alt2 $noun
 comodo		$alt2
 concerto	$alt2 $noun
+concertos	$alt2
 concordo	$alt
 conforto	$alt  $verb
+congelo		$alt
 consolo		$alt2 $noun
 controle	$alt2 $noun
 controlo	$alt2 $noun
 coreia		$alt
+coreto		$alt2
 corneta		$alt2
 cornos		$alt
 corpos		$alt
@@ -745,6 +749,7 @@ corvos		$alt
 coto		$alt2
 cratera		$alt
 crede		$alt2
+crepe		$alt
 decore		$alt
 desapego	$alt2 $noun
 descabelo	$alt
@@ -754,11 +759,15 @@ desemprego	$alt $verb
 desespero	$alt2 $noun
 desfecho	$alt2
 desprezo	$alt2 $noun
+desse		$alt2
+desse		$alt $verb
+deste		$alt2
+deste		$alt $verb
+desterro	$alt2
 deveras		$alt
 dez		$alt
 diarreia	$alt
 discordo	$alt
-dissermos	$alt
 dobro		$alt2 $noun
 doce		$alt2
 doutora		$alt2
@@ -768,6 +777,7 @@ dueto		$alt2
 elixir		eliSir
 elo		$alt
 emprego		$alt2 $noun
+empregos	$alt2
 encosto		$alt  $verb
 endereço	$alt2
 endereço	$alt  $verb
@@ -786,6 +796,8 @@ erros		$alt2
 esboço		$alt  $verb
 escopeta	$alt2
 escova		$alt2 $noun
+escovas	$alt2
+escovo		$alt
 escroto		$alt2
 esforço		$alt  $verb
 esforços	$alt
@@ -820,14 +832,13 @@ folga		$alt
 fogos		$alt
 foguete		$alt2
 foice		$alt2
+fora		$alt
+fora		$alt2 $verb
 forca		$alt2
 força		$alt2 $noun
 forças		$alt2
 forço		$alt
-fordes		$alt2
-fores		$alt2
 forro		$alt $verb
-fosse		$alt2
 frevo		$alt2
 galera		$alt
 galileia	$alt
@@ -853,7 +864,6 @@ hemorroida	$alt
 hoje		$alt2
 horrores	$alt2
 ideia		$alt
-insonoro	$alt
 interesse	$alt2 $noun
 jogo		$alt2 $noun
 joguete		$alt2
@@ -949,6 +959,7 @@ primavera	$alt
 provo		$alt
 quarteto	$alt2
 queda		$alt
+quede		$alt2
 quinteto	$alt2
 recomeço	$alt2 $noun
 recordo		$alt
@@ -969,6 +980,8 @@ rocha		$alt
 rock		$alt
 rola		$alt2 $noun
 rolo		$alt2 $noun
+rota		$alt2
+rota		$alt $noun
 rumores		$alt2
 saleta		$alt2
 sarjeta		$alt
@@ -982,6 +995,7 @@ selvagem	seUv'aZeIN
 sexteto		$alt2
 ?1 senhora	$alt2
 senhores	$alt2
+singelo		$alt
 sinopse		$alt
 soco		$alt2
 soco		$alt $verb
@@ -1007,6 +1021,7 @@ topo		$alt  $verb
 torno		$alt  $verb
 torre		$alt2 $noun
 torres		$alt2
+torro	$alt
 tortos		$alt
 traqueia	$alt
 travesso	$alt2
@@ -1019,6 +1034,7 @@ trombeta	$alt2
 tumores		$alt2
 valeta		$alt2
 vanessa		$alt2
+velo		$alt
 velozes		$alt
 verme		$alt
 violeta		$alt2

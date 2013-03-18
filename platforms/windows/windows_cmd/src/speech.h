@@ -30,12 +30,14 @@
 #define __WIN32__
 #define NEED_WCSTOF
 #define NEED_GETOPT
+#define USE_MBROLA_LIB
 
 #define PATHSEP '\\'
 #define USE_PORTAUDIO
 #define NO_VARIADIC_MACROS
 #define INCLUDE_KLATT
 #define INCLUDE_MBROLA
+#define INCLUDE_SONIC
 
 // will look for espeak_data directory here, and also in user's home directory
 #define PATH_ESPEAK_DATA  "/usr/share/espeak-data"

@@ -1,12 +1,36 @@
- 
 // Aragon translation rules
 // This file is UTF-8 encoded
 
+// letters
+
+_cap	m'aJ^uskla   // should be after the letter
+_??	simb'Olo
+_#32	Esp'aTjo
+
+
+// accent names
+_lig	liQaD'ura
+_acu	akT'ento aQ'uDo
+_ac2	d'Ople||aQ'uDo	
+_brv	br'eu
+_ced	TeD'il^a
+_cir	Tirkumfl'eSo
+_dia	djEr'esi
+_dac	d'Ople||aQ'uDo	
+_dot	p'unto
+_grv	gr'iEu
+_hac	kar'On
+_mcn	makr'On
+_ogo	kod'eta
+_rng	an'iel^o
+_stk	b'aRR2a	 // ??
+_tld	t'il^a
 
 
 // letter names
 b	be
 c	Te
+ç	Te||TetjEl^a
 d	de
 f	Efe
 g	ge
@@ -31,6 +55,14 @@ z	Teta
 y	i  $u     // word 'and'
 _y	je
 y	je	$atend
+ch	tSe
+ll	'El^e
+á	'a||akTEntw'aDa
+é	'e||akTEntw'aDa
+í	'i||akTEntw'aDa
+ó	'o||akTEntw'aDa
+ú	'u||akTEntw'aDa
+ü	,uDjEr'Esi
 
 
 // numbers
@@ -56,7 +88,7 @@ _2X	B,int
 _3X	tr'enta
 _4X	kwar'anta
 _5X	Tinkw'anta
-_6X	siks'anta
+_6X	siS'anta
 _7X	set'anta
 _8X	gwit'anta
 _9X	noB'anta
@@ -70,16 +102,108 @@ _7C	sjEteTj'Entos
 _8C	gwitoTj'Entos
 _9C	nowTj'Entos
 _0M1	m'il
+_1M1	m'il
 _0M2	mil^'ons
 _1M2	un||mil^'on
 _0M4	bil^'ons
 _1M4	un||bil^'on
 
-_0and	i
+_0and	%i
 _dpt	kon
 
 
+// ordinal numbers
+_#º	o
+_#ª	a
+//_ord	eno
+
+_1ox	prim'Er
+_2ox	seQ'und
+_3ox	tErT'Er
+
+_1o	un'en
+_2o	dos'en
+_3o	tres'en
+_4o	kwatr'en
+_5o	Tink'en
+_6o	seIs'en
+_7o	sEt'en
+_8o	gwit'en
+_9o	nU'en
+_11o	onT'en
+_12o	DoT'en
+_13o	tReT'en
+_14o	katorT'en
+_15o	kinT'en
+_16o	sET'en
+_10o	DET'en
+_20o	Bint'en
+_30o	trent'en
+_40o	kwarant'en
+_50o	Tinkwant'en
+_60o	siSant'en
+_70o	sEtant'en
+_80o	gwitant'en
+_90o	noBant'en
+
+_1Xo	DeTi
+_2Xo	Binti
+_3Xo	trentaI
+_4Xo	kwarantaI
+_5Xo	TinkwantaI
+_6Xo	siSantaI
+_7Xo	sEtantaI
+_8Xo	gwitantaI
+_9Xo	noBantaI
+_1Co	TEnt'en
+_2Co	dosTEnt'en
+_3Co	tresTEnt'en
+_4Co	kw,atroTEnt'en
+_5Co	T,inkoTEnt'en
+_6Co	seIsTEnt'en
+_7Co	sjEtTEnt'en
+_8Co	gw,eItoTEnt'en
+_9Co	nweUTEnt'en
+
+_0M1o	mil'en
+_1M1	mil'en
+_0M2o	mil^on'en
+_1M2o	mil^on'en
+
+// characters
+$	d'olar
+€	eUros
+£	liBras
+*	asterisko
+&	ampers'an
+@	aRRoBa
+#	sin^'alDenum'ero
+%	porTj'En
++	mas
+=	iQwal
+/	baRRa
+\	kontraBaRRa
+|	b'aRRaBertik'al
+
+_-	gj'on
+!	TaRR'ar||eksklamaTj'on
+_¡	uBr'ir||eksklamaTj'on
+_?	TaRR'ar||interroQaTj'on
+_¿	uBr'ir||interroQaTj'on
+_[	uBr'ir||Qaf'et
+_]	TaRR'ar||Qaf'et
+_(	uBr'ir||parent'esi
+_)	TaRR'ar||parent'esi
+_{	uBr'ir||kl'aU
+_}	TaRR'ar||kl'aU
+
+
 // unstressed words
+o	$u+
+a	$u+
+os	$u+
+as	$u+
+
 lo	$u
 la	$u
 los	$u
@@ -90,4 +214,311 @@ me	$u
 te	$u
 se	$u
 le	$u
+li	$u
+nos	$u
+mos	$u
+tos	$u
+vos	$u
+os	$u
 les	$u
+lis	$u
+
+con	$u
+de	$u
+en	$u $brk
+mi	$u
+pa	$u
+por	$u $brk
+pues	$u
+pos	$u
+ta	$u $brk
+tu	$u
+sin	$u 
+su	$u
+ye	$u
+ro	$u
+ra	$u
+ros	$u
+ras	$u
+el	$u
+es	$u
+els	$u
+mis	$u
+tus	$u
+sus	$u
+bell	$u
+bel	$u
+bella	$u
+bells	$u
+bellas	$u
+bellos	$u
+que	$u
+qui	$u
+quien	$u
+como	$u
+quan	$u
+quando	$u
+on	$u
+aon	$u
+porque	$u
+dende	$u
+entre	$u
+contra	$u
+enta	$u
+sinde	$u
+per	$u
+pus	$u
+dica	$u
+sino	$u
+ni	$u
+pero	$u
+bi	$u
+i	$u+
+ie	$u
+hu	$u
+sant	$u
+donya	$u
+don	$u
+he	$u
+has	$u
+ha	$u
+han	$u
+heba	$u
+hebas	$u
+heban	$u
+se'n    sen $u
+
+
+//abbreviations
+abs $abbrev
+ac $abbrev
+acb $abbrev
+acm $abbrev
+acs $abbrev
+acup $abbrev
+adn $abbrev
+adsl $abbrev
+aea $abbrev
+aeci $abbrev
+aek $abbrev
+aepd $abbrev
+afp $abbrev
+ai $abbrev
+akp $abbrev
+amd $abbrev
+anb $abbrev
+anp $abbrev
+anv $abbrev
+ap $abbrev
+apec $abbrev
+aqu $abbrev
+atp $abbrev
+ats $abbrev
+avl $abbrev
+avs $abbrev
+avt $abbrev
+avv $abbrev
+bbva $abbrev
+bce $abbrev
+bme $abbrev
+bop $abbrev
+bopv $abbrev
+ca $abbrev
+cav $abbrev
+cbuc $abbrev
+ccaa $abbrev
+ccoo $abbrev
+ccuc $abbrev
+cee $abbrev
+ceoe $abbrev
+cepyme $abbrev
+cesid $abbrev
+cicr $abbrev
+cidui $abbrev
+ciemat $abbrev
+cis $abbrev
+cne $abbrev
+cni $abbrev
+csic $abbrev
+csif $abbrev
+dgaia $abbrev
+dlsi $abbrev
+dni $abbrev
+dogc $abbrev
+dogv $abbrev
+dya $abbrev
+eads $abbrev
+eaed $abbrev
+eb $abbrev
+ebb $abbrev
+eees $abbrev
+eei $abbrev
+egb $abbrev
+eln $abbrev
+emt $abbrev
+eoc $abbrev
+epsv $abbrev
+erc $abbrev
+ets $abbrev
+euia $abbrev
+facua $abbrev
+fao $abbrev
+fapae $abbrev
+fbi $abbrev
+fci $abbrev
+feb $abbrev
+fed $abbrev
+fib $abbrev
+finul $abbrev
+fmi $abbrev
+fuoc $abbrev
+gatt $abbrev
+iaaf $abbrev
+ibm $abbrev
+icaa $abbrev
+icde $abbrev
+icv $abbrev
+iec $abbrev
+iee $abbrev
+ieo $abbrev
+imc $abbrev
+ims $abbrev
+in3 $abbrev
+inc $abbrev
+inem $abbrev
+ing $abbrev
+inm $abbrev
+ip $abbrev
+ipc $abbrev
+ipca $abbrev
+iqua $abbrev
+isaf $abbrev
+itcat $abbrev
+itv $abbrev
+iu $abbrev
+iun $abbrev
+ko $abbrev
+lotc $abbrev
+mibor $abbrev
+mit $abbrev
+mnac $abbrev
+nba $abbrev
+nyse $abbrev
+ocde $abbrev
+ocu $abbrev
+oea $abbrev
+oiea $abbrev
+olp $abbrev
+omc $abbrev
+omg $abbrev
+oms $abbrev
+ong $abbrev
+op $abbrev
+pce $abbrev
+pda $abbrev
+pde $abbrev
+pdi $abbrev
+pec $abbrev
+pga $abbrev
+pge $abbrev
+pgou $abbrev
+pib $abbrev
+pid $abbrev
+pse $abbrev
+psoe $abbrev
+psuc $abbrev
+racc $abbrev
+raf $abbrev
+rba $abbrev
+ree $abbrev
+rfec $abbrev
+rne $abbrev
+rsa $abbrev
+rtve $abbrev
+samu $abbrev
+sdat $abbrev
+sec $abbrev
+smi $abbrev
+sod $abbrev
+sos $abbrev
+summa $abbrev
+tor $abbrev
+tpi $abbrev
+tse $abbrev
+tsja $abbrev
+tve $abbrev
+ua $abbrev
+uab $abbrev
+uaw $abbrev
+udc $abbrev
+udg $abbrev
+udl $abbrev
+ue $abbrev
+uem $abbrev
+ugt $abbrev
+uhf $abbrev
+uib $abbrev
+uicn $abbrev
+uimp $abbrev
+uji $abbrev
+um $abbrev
+umd $abbrev
+ump $abbrev
+upc $abbrev
+upd $abbrev
+upf $abbrev
+upn $abbrev
+ups $abbrev
+upv $abbrev
+url $abbrev
+urss $abbrev
+urv $abbrev
+usb $abbrev
+usfp $abbrev
+uss $abbrev
+uv $abbrev
+uveg $abbrev
+uz $abbrev
+vih $abbrev
+vpo $abbrev
+wap $abbrev
+witsa $abbrev
+
+
+// exceptions
+barça        b'arsa
+holio	x'olio
+jazz	dZ'as
+
+
+// Foreign words
+android	andr'oId
+apple	'apEl
+at	'at
+chat	tS'at
+chrome	kr'ome
+espeak	isp'ik
+(e speak) isp'ik
+facebook f'eIsbuk
+firefox	f'aIrfoks
+google	g'ugEl
+(i phone)	'aIfon
+iphone	'aIfon
+(i pod)	'aIpod
+ipod	'aIpod
+hardware x'ardwer
+linux	$1
+live l'aIB
+messenger m'esendZer
+mozilla	moT'ila
+nvda	ene|be|de|'a
+office	'ofis
+skype	esk'aIp
+software	s'oftwer
+thunderbird	Tanderb'ird
+twitter	tw'iter
+unix	j'uniks
+whatsapp	was'app
+windows	w'indows
+
+mobile _^_EN
