@@ -607,7 +607,7 @@ char *WritePhMnemonic(char *phon_out, PHONEME_TAB *ph, PHONEME_LIST *plist, int 
 				break;   // # is subscript-h, but only for consonants
 
 			// ignore digits after the first character
-			if(!first && isdigit(c))
+			if(!first && IsDigit09(c))
 				continue;
 
 			if((c >= 0x20) && (c < 128))
@@ -1495,8 +1495,8 @@ void SetWordStress(Translator *tr, char *output, unsigned int *dictionary_flags,
 			else
 			{
 				// no long vowels or consonant clusters
-				if(vowel_count > 4)
-					stressed_syllable = vowel_count - 3;
+				if(vowel_count > 5)
+					stressed_syllable = vowel_count - 3;  // more than 4 syllables
 				else
 					stressed_syllable = vowel_count - 1;
 			}
@@ -2694,7 +2694,7 @@ int TranslateRules(Translator *tr, char *p_start, char *phonemes, int ph_size, c
 						{
 							if(tr->langopts.alt_alphabet == alphabet->offset)
 							{
-								sprintf(phonemes,"%c%s",phonSWITCH, tr->langopts.alt_alphabet_lang);
+								sprintf(phonemes,"%c%s",phonSWITCH, WordToString2(tr->langopts.alt_alphabet_lang));
 								return(0);
 							}
 							if(alphabet->flags & AL_WORDS)
@@ -2984,6 +2984,7 @@ static const char *LookupDict2(Translator *tr, const char *word, const char *wor
 	const char *word_end;
 	const char *word1;
 	int wflags = 0;
+	int lookup_symbol;
 	char word_buf[N_WORD_BYTES+1];
 	char dict_flags_buf[80];
 
@@ -2992,6 +2993,7 @@ static const char *LookupDict2(Translator *tr, const char *word, const char *wor
 		wflags = wtab->flags;
 	}
 
+	lookup_symbol = flags[1] & FLAG_LOOKUP_SYMBOL;
 	word1 = word;
 	if(tr->transpose_min > 0)
 	{
@@ -3178,9 +3180,9 @@ static const char *LookupDict2(Translator *tr, const char *word, const char *wor
 				continue;
 		}
 
-		if((dictionary_flags2 & FLAG_ATEND) && (word_end < translator->clause_end))
+		if((dictionary_flags2 & FLAG_ATEND) && (word_end < translator->clause_end) && (lookup_symbol==0))
 		{
-			// only use this pronunciation if it's the last word of the clause
+			// only use this pronunciation if it's the last word of the clause, or called from Lookup()
 			continue;
 		}
 
@@ -3192,7 +3194,7 @@ static const char *LookupDict2(Translator *tr, const char *word, const char *wor
 
 		if((dictionary_flags2 & FLAG_SENTENCE) && !(translator->clause_terminator & CLAUSE_BIT_SENTENCE))
 		{
-			// only uis this clause is a sentence , i.e. terminator is {. ? !} not {, : :}
+			// only if this clause is a sentence , i.e. terminator is {. ? !} not {, : :}
 			continue;
 		}
 
@@ -3360,7 +3362,7 @@ int LookupDictList(Translator *tr, char **wordptr, char *ph_out, unsigned int *f
 		if(((c = *word1++)==0) || (c == ' '))
 			break;
 
-		if((c=='.') && (length > 0) && (isdigit(word[length-1])))
+		if((c=='.') && (length > 0) && (IsDigit09(word[length-1])))
 			break;  // needed for lang=hu, eg. "december 2.-ig"
 
 		word[length] = c;
@@ -3467,14 +3469,33 @@ int LookupDictList(Translator *tr, char **wordptr, char *ph_out, unsigned int *f
 }   //  end of LookupDictList
 
 
+extern char word_phonemes[N_WORD_PHONEMES];    // a word translated into phoneme codes
 
 int Lookup(Translator *tr, const char *word, char *ph_out)
 {//===================================================
+	int found;
 	unsigned int flags[2];
-	flags[0] = flags[1] = 0;
+	int say_as;
 	char *word1 = (char *)word;
-	return(LookupDictList(tr, &word1, ph_out, flags, 0, NULL));
+	char text[80];
+
+	flags[0] = 0;
+	flags[1] = FLAG_LOOKUP_SYMBOL;
+	found = LookupDictList(tr, &word1, ph_out, flags, FLAG_ALLOW_TEXTMODE, NULL);
+
+	if(flags[0] & FLAG_TEXTMODE)
+	{
+		say_as = option_sayas;
+		option_sayas = 0;   // don't speak replacement word as letter names
+		text[0] = 0;
+		strncpy0(&text[1], word1, sizeof(text));
+		found = TranslateWord(tr, &text[1], 0, NULL, NULL);
+		strcpy(ph_out, word_phonemes);
+		option_sayas = say_as;
+	}
+	return(found);
 }
+
 
 int LookupFlags(Translator *tr, const char *word)
 {//==============================================

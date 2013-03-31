@@ -1,180 +1,211 @@
-// Translation rules for Bengali
+﻿// Translation rules for Bengali
 // This file is UTF8 encoded
 
 // Numbers
- devanagari numbers are changed to latin characters before translation
-_0	S'u:n.nV'o:
-_1	a'k
-_2	d:UI
-_3	t'i:n
-_4	c'a:@'r
-_5	,pa~c
-_6	c#'O:j
-_7	S'a:t
-_8	'a:t.#
-_9	n'O:j
+// Bengali numbers are changed to latin characters before translation
+_0	S'unjO
+_1	'&k
+_2	duj
+_3	t'in
+_4	tS'ar
+_5	p'a~tS
+_6	tS#'Oj
+_7	S'at
+_8	'at.#
+_9	n'Oj
 
-_10	d'O:S
-_11	a'g'a:rO:
-_12	b'a:rO:
-_13	t'a:rO:
-_14	c#:O:d'dO:
-_15	p'O:n'e:rO:
-_16	S'o:lO:
-_17	SO:t'e:rO:
-_18	a:t#'e:rO:
-_19	U'n'IS
+_2a	d'u     // with hundreds etc.
+_6a	tS#'a
+_9a	n'O
 
-_20	kU:'ri
-_21	e:kU'S
-_22	b'a:IS
-_23	t'e:IS
-_24	c'O:b'bIS
-_25	pa~O:c'IS
-_26	c#'a:'bb'IS
-_27	Sa:ta:S
-_28	at#'a:S
-_29	Unt'rIs
-_30	t'i:rIS
 
-_31	e:k't:rIS
-_32	bat:'rIS
-_33	tE't'rIS
-_34	ca~o:u:t'rIS
-_35	pa~O:it'rIS
-_36	c#a'trIS
-_37	Sa~it'rIS
-_38	at'tr'IS
-_39	U'nO:cO:l'IS
+_10	d'OS
+_11	'&garo
+_12	b'arO
+_13	t'erO
+_14	tS'oddO
+_15	p'OnerO
+_16	S'olO
+_17	S'OterO
+_18	'at.#arO 
+_19	'uniS
 
-_40	co:l'lIS
-_41	e:k'co:l'lIS
-_42	bi'al'lIS
-_43	te:ta:l'lIS
-_44	cu:a:l'lIS
-_45	paI'nta:l'lIS
-_46	c#e:co:l'lIS
-_47	Sat'co:l'lIs
-_48	at'co:l'lIS
-_49	Uno:pan'ca:S
+_20	k'uri    // or b'iS   ??
+_21	ek'uS
+_22	b'ajS
+_23	t'ejS
+_24	tS'ObbiS
+_25	p'O~tSiS
+_26	tSh'abbiS
+_27	Sat'aS
+_28	'at.#aS
+_29	unOtr'iS
 
-_50	p@n'ca:s
-_51	e:ka:n'no:
-_52	ba:h@n'no:
-_53	t'Ip'pan'no:
-_54	cu:wan'no:
-_55	po:n'ca:n'no:
-_56	c#h@p:'an'no:
-_57	Sa:ta:n'no:
-_58	at#'a:n'no:
-_59	Uno:s'at#
+_30	tr'iS
+_31	ekOtr'iS
+_32	bOtr'iS
+_33	tetr'iS
+_34	tSowtr'iS
+_35	pO~jtr'iS
+_36	tS#'Otr'iS
+_37	Sa~itr'iS
+_38	at.tr'iS
+_39	'unOtSOll'iS
 
-_60	s'a:t.#
-_61	e:k'so:t'tI
-_62	ba:so:t'tI
-_63	te:so:t'tI
-_64	ca~o:u:so:t'tI
-_65	pa~I'so:t'tI
-_66	c#e:so:t'tI
-_67	Sat'so:t'tI
-_68	atso:t'ti
-_69	,Uno:Sat'to:r
+_40	tSOll'iS
+_41	ektSOll'iS
+_42	biall'iS
+_43	tetall'iS
+_44	tSoall'iS
+_45	pO~jtall'iS
+_46	tSetSOll'iS
+_47	SatSOll'is
+_48	atSOll'iS
+_49	unOpO~tSaS
 
-_70	So:t'to:r
-_71	e:kat'to:r
-_72	ba:hat'to:r
-_73	tIat'to:r
-_74	cu:at'to:r
-_75	pa~c#at'to:r
-_76	c#I'at:to:r
-_77	Sa:t@'t:o:r
-_78	atat'to:r
-_79	,Uno:a:Si:
+_50	pO~tS'aS
+_51	&kann'o
+_52	bajann'o
+_53	tepann'o
+_54	tSujann'o
+_55	pontSann'o
+_56	tS#apann'o
+_57	Satann'o
+_58	at.ann'o
+_59	unOS'at.
 
-_80	a:Si
-_81	e:ka:Si:
-_82	bI'ra:Si:
-_83	tIra:Si:
-_84	cu:ra:Si:
-_85	pa~ca:Si:
-_86	c#Ia:Si:
-_87	Sa:ta:Si:
-_88	O:sto:a:Si:
-_89	Uno:no:b'bo:I
 
-_90	no:b:bo:I
-_91	e:ka:no:b'bo:I
-_92	bIra:no:b'bo:I
-_93	tIr'a:no:b'bo:I
-_94	cu:r'a:no:b'bo:I
-_95	pa~ca:no:b'bo:I
-_96	c#Ia:no:b'bo:I
-_97	S@ta:no:b'bo:I
-_98	ata:no:b'bo:I
-_99	nIra:no:b'bo:I
+_60	s'at.
+_61	ekSOt.t.'i
+_62	baSOt.t.'i
+_63	teSOt.t.'i
+_64	tSowSOt.t.'i
+_65	pojSOt.t.'i
+_66	SeSOt.t.'i
+_67	SatSOt.t.'i
+_68	at.SOt.t.'i
+_6X	sat.t.'i
+_69	unOSOtt'ur
 
-_0C	SO:
-_0M1	h@z'a:r
-_0M2	l'a:k#
-_0M3	ko:tI
-_0M4	o:r'bu:d
-_dpt	d@so:mIk
+_70	SOtt'Or
+_71	ekatt'Or
+_72	bahatt'Or
+_73	tehatt'Or
+_74	tSuhatt'Or
+_75	pOtSatt'Or
+_76	tS#ijatt'Or
+_77	Satatt'Or
+_78	at.att'Or
+_79	unOaS'i
+
+_80	aS'i
+_81	&kaS'i
+_82	beraS'i
+_83	teraS'i
+_84	tSuraS'i
+_85	po~tSaS'i
+_86	tS#ijaS'i
+_87	SataS'i
+_88	at.aS'i
+_89	,unOnObb'oj
+
+_90	nObb'oj
+_91	&kanObb'oj
+_92	beranObb'oj
+_93	teranObb'oj
+_94	tSuranObb'oj
+_95	pOtSanObb'oj
+_96	tS#ijanObb'oj
+_97	SatanObb'oj
+_98	at.anObb'oj
+_99	niranObb'oj
+
+_0C	S'o
+_0M1	h'ajar
+_0M2	l'ak#
+_0M3	k'ot.i
+_0M4	'Orbud
+_dpt	dOsomik
+
 
 // Single consonants
-ক	k@
-খ	k#@
-গ	g@
-ঘ	g#@
-ঙ	N'g
-চ	c@
-ছ	c#@
-জ	J@
-ঝ	J#@
-ঞ	n^@
-ট	t.@
-ঠ	t.#@
-ড	d.@
-ঢ	d.#@
-ণ	n.@   // retroflex n.@
-ত	t@
-থ	t#@
-দ	d@
-ধ	d#@
-ন	n@
-প	p@
-ফ	p#@
-ব	b@
-ভ	b#@
-ম	m@
-য়	O:j
-য	J@
-র	r@
-ড়	r-@
-ঢ়	hr@
-ল	l@
-শ	S@
-ষ	s.@   //  retroflex [S]
-স	s@
-হ	H@
-ৎ	t@
+ক	kO
+খ	k#O
+গ	gO
+ঘ	g#O
+ঙ	'uNO
+চ	tSO
+ছ	tShO    // [h] to distinguish from [tS]
+জ	JO
+ঝ	J#O
+ঞ	'iNO
+ট	t.O
+ঠ	t.#O
+ড	d.O
+ঢ	d.#O
+ণ	m'odd#ennO
+ত	tO
+থ	t#O
+দ	dO
+ধ	d#O
+ন	d'ontennO
+প	pO
+ফ	fO      // or [p#O] ?
+ব	bO
+ভ	b#O
+ম	mO
+য়	Oj
+য	ontostedZ'O
+র	rO
+ড়       r.O
+ড়	r.O     // (d. + nukta)
+ঢ়	hr.O
+ঢ়	hr.O    // (d#. + nukta)
+ল	lO
+শ	taleboS:O
+ষ	mud#en:oS:O
+স	d'onteS:O
+হ	hO
+ৎ	kh'Ond.otO
 
+// full vowels
+অ	O
+আ	a
+ই	hrOS:o'i
+ঈ	dirg#o'i
+উ	hrOS:o'u
+ঊ	dirg#o'u
+ঋ	ri
+এ	e
+ঐ	oj
+ও	o
+ঔ	ow
 
 // combining vowel signs
-ा	#X2a:
-ि	#X1I
-ी	#X2i:
-ূ	#X1U
-ू	#X2u:
-ृ	#X1rI
-ে	#X1e:
-ৈ	#X2E:
-ো	#X1o:
-ৌ	#X1O:
-ॐ	#X1o~m
+া	'akar
+ি	r'oS:ikar
+ী	d'irg#ikar
+ূ	r'oS:ukar
+ু	d'irg#ukar
+ৃ	r'ikar
+ে	'ekar
+ৈ	'ojkar
+ো	'okar
+ৌ	'owkar
+
+// signs
+্	h'OSonto
+ং	'OnuSSOr
+ঃ	b'iSOrgo
+ঁ	tS'Ondrobindu
+়	b'indu
+
+_,	koma
 
 
 // Punctuation
 ।	dVn.d.V
+
 
 // Pronouns
 আমি 	$u	// main: I
@@ -198,7 +229,7 @@ _dpt	d@so:mIk
 তোর 	$u
 
 এ	$u	// he/she/it
-একে 	$u
+আপনি	$u
 এটার 	$u
 এর 	$u
 
@@ -264,6 +295,9 @@ _dpt	d@so:mIk
 
 // Verbs
 
+হয়	$u
+
+
 ছিল	$u	// chilo: past aux
 ছিলেন 	$u	// chilen
 
@@ -274,5 +308,4 @@ _dpt	d@so:mIk
 
 
 // Exceptions
-ক্রিকেট        krIk'Et
-সাইবার        s'aIb@r
+এত	&to

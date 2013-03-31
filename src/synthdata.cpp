@@ -35,7 +35,7 @@
 #include "translate.h"
 #include "wave.h"
 
-const char *version_string = "1.47.01  18.Mar.13";
+const char *version_string = "1.47.03e  29.Mar.13";
 const int version_phdata  = 0x014701;
 
 int option_device_number = -1;
@@ -615,6 +615,7 @@ static int CountVowelPosition(PHONEME_LIST *plist)
 static bool InterpretCondition(Translator *tr, int control, PHONEME_LIST *plist, USHORT *p_prog, WORD_PH_DATA *worddata)
 {//========================================================================================================================
 	int which;
+	int ix;
 	unsigned int data;
 	int instn;
 	int instn2;
@@ -705,6 +706,21 @@ static bool InterpretCondition(Translator *tr, int control, PHONEME_LIST *plist,
                 return(false);   // no previous vowel
 				plist = &(worddata->prev_vowel);
             break;
+
+		case 9:  // next3PhW
+			for(ix=1; ix<=3; ix++)
+			{
+				if(plist[ix].sourceix)
+					return(false);
+			}
+			plist = &plist[3];
+			break;
+
+		case 10: // prev2PhW
+			if((plist[0].sourceix) || (plist[-1].sourceix))
+				return(false);
+			plist-=2;
+			break;
         }
 
 		if((which == 0) || (which == 5))
@@ -1014,6 +1030,16 @@ void InterpretPhoneme(Translator *tr, int control, PHONEME_LIST *plist, PHONEME_
 			{
 				if(phoneme_tab[plist[1].phcode]->type == phVOWEL)
 					phdata->pd_param[i_APPEND_PHONEME] = data;
+			}
+			else
+			if(instn2 == i_ADD_LENGTH)
+			{
+				if(data & 0x80)
+				{
+					// a negative value, do sign extension
+					data = -(0x100 - data);
+				}
+				phdata->pd_param[i_SET_LENGTH] += data;
 			}
 			else
 			if(instn2 == i_IPA_NAME)
